@@ -40,6 +40,6 @@ Discuss and report results
 - Giacomo Timelli - giacomo.timelli@studio.unibo.it
 - Luca Cagnini - luca.cagnini@studio.unibo.it
 - Marco Centenaro - marco.centenaro@studio.unibo.it
-- Marco Cuscunà - marco.cuscunà@studio.unibo.it
+- Marco Cuscunà - marco.cuscuna@studio.unibo.it
 - Marina Mariano - marina.mariano@studio.unibo.it
 
