@@ -1,12 +1,19 @@
-# ***DATA COLLECTION***
-The first step for the project is **data collection** : for any machine learning model it is always necessary to acquire high-quality data,
-to ensure the correct traning of it. We retrived relevant protein sequences from Uniprot database, filtering and creating 
-two different datasets:a positive and a negative one. 
-Our approach was divided into two consecutive step: a first data retrival of proteins using the Web interface approach, and a second one, using the API of UniProt database from the first advanced search. 
-## 1. Web interface approach
-We started using the Advance search interface in Uniprot (Release 2025_03) (https://www.uniprot.org/) to filter out and retrive the API for two sets of proteins:
+# Data Collection
 
-## Positive Set
+The first step of the project is **data collection**: for any machine learning model, it is necessary to acquire high-quality data to ensure correct training.  
+We retrieved relevant protein sequences from the [UniProt](https://www.uniprot.org/) database, filtering them into two different datasets: a **positive** and a **negative** set.  
+
+Our approach was divided into two consecutive steps:
+1. Retrieval of proteins using the **web interface**.  
+2. Retrieval via the **UniProt API**, starting from the advanced search queries.  
+
+---
+
+## 1. Web Interface Approach
+
+We started using the *Advanced Search* interface in UniProt (Release 2025_03) to filter and retrieve datasets.
+
+### Positive Set
 
 **QUERY:** 
 ```
@@ -54,24 +61,40 @@ The API URL using the search endpoint for negative set was downloaded. This endp
 
 https://rest.uniprot.org/uniprotkb/search?format=json&query=%28%28fragment%3Afalse%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28taxonomy_id%3A2759%29+NOT+%28ft_signal%3A*%29+AND+%28%28cc_scl_term_exp%3ASL-0091%29+OR+%28cc_scl_term_exp%3ASL-0191%29+OR+%28cc_scl_term_exp%3ASL-0173%29+OR+%28cc_scl_term_exp%3ASL-0209%29+OR+%28cc_scl_term_exp%3ASL-0204%29+OR+%28cc_scl_term_exp%3ASL-0039%29%29+AND+%28reviewed%3Atrue%29+AND+%28existence%3A1%29%29&size=500
 
+---
+
 ## 2. API approach
 
-Two python scripts, one for the positive ([get_dataset_neg.ipynb](./get_dataset_neg.ipynb)) and one for the negative set ([get_dataset_pos.ipynb](./get_dataset_pos.ipynb)) were created to perform the API search of Uniprot, to create two output file format (.tsv .fasta) of our sets and to add a more precise filtering step that included: 
-- Filtering out proteins with a SP shorter than 14 residues and without a cleavage site for the positive set
-- Checking for negative proteins with a transmembrane helix starting in the first 90 residues
+Two Python scripts were created:
+
+[get_dataset_neg.ipynb](./get_dataset_neg.ipynb)
+ → for the positive set
+
+[get_dataset_pos.ipynb](./get_dataset_pos.ipynb)
+ → for the negative set
+
+These scripts perform the API calls to UniProt, generate output files in both .tsv and .fasta formats, and apply additional filtering:
+
+- Positive set: filtering out proteins with a signal peptide shorter than 14 residues and without a cleavage site.
+
+- Negative set: checking for proteins with a transmembrane helix starting within the first 90 residues.
   
 ## 3. Data collection output
 
-After the API call, our data were saved in a *.tsv* format to include informations specific to each protein 
-(for the positive set: the protein UniProt accession, the organism name, the Eukaryotic kingdom, the protein length, the position of the signal peptide cleavage site)
-(for the negative set: the protein UniProt accession, the organism name, the Eukaryotic kingdom, the protein length, Whether the protein has a transmembrane helix starting in the first 90 residues). 
-Sequences were saved in a *.fasta* file. 
+After the API calls, our data were saved in:
+- .tsv format: containing metadata for each protein.
+  1. Positive set: UniProt accession, organism name, Eukaryotic kingdom, protein length, signal peptide cleavage site position.
+  2. Negative set: UniProt accession, organism name, Eukaryotic kingdom, protein length, presence of a transmembrane helix within the first 90 residues.
 
+- .fasta format: containing the protein sequences.
+- 
 The number of proteins retrived after the search is showed in the table below. 
+
 
 | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1381        |
+
 
 
 
