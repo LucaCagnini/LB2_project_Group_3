@@ -5,7 +5,7 @@ This repository contains files and codes of the project for the Laboratory of Bi
 ## Table of Contents
 
 1. [Data Collection](#data-collection)  
-2. [Preprocessing](#preprocessing)  
+2. [Data_Preparation](#data-preparation)  
 3. [Analysis](#analysis)  
 4. [Feature extraction](#feature-extraction)  
 5. [Implement ML algorithms](#implement-ml-algorithms)  
@@ -16,12 +16,15 @@ This repository contains files and codes of the project for the Laboratory of Bi
 # Data Collection
 
 Retrieve relevant datasets from UniProtKB. This approach included two step:
-- 
+- Web interface approach
+- API approach
 
 [Data_collection](./Data_Collection)
 
 # Data Preparation
 Preprocess datasets for cross-validation and benchmarking, including:
+- training and benchmark set creation
+- redundancy reduction
 
 [Data_Preparation](./Data_Preparation)
 
