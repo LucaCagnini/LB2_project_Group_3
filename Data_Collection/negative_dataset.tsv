@@ -12635,7 +12635,7 @@ Q62668	Rattus norvegicus	Metazoa	929	False
 Q63488	Rattus norvegicus	Metazoa	656	True
 Q63803	Rattus norvegicus	Metazoa	1144	False
 Q7TNN9	Rattus norvegicus	Metazoa	497	True
-Q8BWG9	Mus musculus	Metazoa	304	False
+Q8BWG9	Mus musculus	Metazoa	304	True
 Q8C3K6	Mus musculus	Metazoa	665	False
 Q8K440	Mus musculus	Metazoa	1620	True
 Q8K4V2	Rattus norvegicus	Metazoa	953	False
@@ -13553,7 +13553,7 @@ Q9FGH9	Arabidopsis thaliana	Viridiplantae	624	False
 Q9JJY3	Mus musculus	Metazoa	655	False
 Q9QX75	Rattus norvegicus	Metazoa	687	True
 Q9W2R3	Drosophila melanogaster	Metazoa	792	False
-P25613	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	283	False
+P25613	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	283	True
 P46951	Saccharomyces cerevisiae (strain ATCC 204508 / S288c)	Fungi	817	False
 Q60610	Mus musculus	Metazoa	1591	False
 Q91XE4	Mus musculus	Metazoa	318	False
@@ -18702,7 +18702,7 @@ Q9W701	Xenopus laevis	Metazoa	689	True
 Q8IDN4	Plasmodium falciparum (isolate 3D7)	Other	211	False
 P49380	Kluyveromyces lactis (strain ATCC 8585 / CBS 2359 / DSM 70799 / NBRC 1267 / NRRL Y-1140 / WM37)	Fungi	899	False
 Q08436	Nicotiana plumbaginifolia	Viridiplantae	956	False
-Q59NP1	Candida albicans (strain SC5314 / ATCC MYA-2876)	Fungi	251	False
+Q59NP1	Candida albicans (strain SC5314 / ATCC MYA-2876)	Fungi	251	True
 Q7YRU6	Oryctolagus cuniculus	Metazoa	1106	False
 A0A077K8G3	Citrus limon	Viridiplantae	407	False
 A5LGM7	Polypedilum vanderplanki	Metazoa	504	False
