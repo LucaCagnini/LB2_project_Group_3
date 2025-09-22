@@ -14,12 +14,16 @@ This repository contains files and codes of the project for the Laboratory of Bi
 ---
 
 # Data Collection
-Retrieve relevant datasets from UniProtKB.
+
+Retrieve relevant datasets from UniProtKB. This approach included two step:
+- 
 
 [Data_collection](./Data_Collection)
 
-# Preprocessing 
-Preprocess datasets for cross-validation and benchmarking
+# Data Preparation
+Preprocess datasets for cross-validation and benchmarking, including:
+
+[Data_Preparation](./Data_Preparation)
 
 # Analysis
 Analyze and visualize dataset statistics
