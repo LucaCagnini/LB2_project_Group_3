@@ -1,6 +1,5 @@
 ## DATA PREPARATION: Building Training and Benchmarking Datasets
 
-
 ---
 Once the preliminary data are collected, the dataset needs to be divided into two distinct subsets:
 
@@ -9,8 +8,7 @@ Once the preliminary data are collected, the dataset needs to be divided into tw
 - **Benchmarking set**  
   Also known as the *holdout dataset*, it is reserved for testing the generalization performance of the models.
 
-  ### Benchmarking Set: Motivation
-
+### Benchmarking Set: Motivation
 Cross-validation alone is not sufficient to guarantee an unbiased estimate of generalization performance:
 
 - Hyperparameter tuning through cross-validation and grid search may still introduce **overfitting**.  
@@ -18,7 +16,6 @@ Cross-validation alone is not sufficient to guarantee an unbiased estimate of ge
 - The model tested on the benchmarking set is the one intended for **production** use.  
 - During cross-validation, models are trained on slightly different subsets of the training dataset, which may bias results.
 
-Creating a proper holdout dataset is **not trivial** and requires specific criteria to avoid biased results: in protein bioinformatics, **sequence similarity** must be carefully considered.This applies both to **cross-validation splits** and to the **selection of a reliable holdout set**.
 
 ---
 
@@ -40,12 +37,26 @@ For the clusterisation procedure the **MMseqs2** software (version 14.7e284) was
   The same output files ( [positive_cluster.tsv](./pos_cluster/pos_cluster.tsv), [positive_rep_seq.fasta](./pos_cluster/pos_rep_seq.tsv), [neg_all_seq.fasta](./pos_cluster/pos_all_seq.tsv ) was obtained using as input *positive_dataset.fasta*. ù
   
 ### Results
+results filtered from a proper [script](./output_recap.ipynb) are visualised below: 
+
  | Non-redundant positives | Non-redundant negatives | N-r negatives with helix transmembrane |
 |--------------------------|-------------------------|----------------------------------------|
 |          1093            |          8934           |             636                        |
 
 ---
 
+### Data Splitting Strategy
+
+To ensure proper training and unbiased evaluation, the dataset is divided as follows:
+
+- **Training vs. Benchmarking sets**
+  - Randomly assign **80%** of both positive and negative sequences to the **training set**.
+  - Assign the remaining **20%** of both positive and negative sequences to the **benchmarking (holdout) set**.
+
+- **Cross-validation on training data**
+  - Build **5-fold cross-validation subsets** from the training set.
+  - Each split preserves the overall **positive/negative ratio**.
+  - Store information about the cross-validation subset each protein belongs to, so results remain reproducible.
 
 
 
