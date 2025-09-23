@@ -27,7 +27,7 @@ For the clusterisation procedure the MMseqs2 software (version) was used. MMseqs
 - [neg_cluster.tsv](./neg_cluster/neg_cluster.tsv): TSV containing two colums ( ID of each sequence in th input file, ID of the representative sequence indetifying the cluster). 
 - [neg_rep_seq.fasta](./neg_cluster/neg_rep_seq.tsv): .fasta file containing all the representative sequences, one for each found cluster.
 - [neg_all_seq.fasta](./neg_cluster/neg_all_seq.tsv): .fasta file with all the sequences used. 
-  The same output files ( [positive_cluster.tsv](./pos_cluster/pos_cluster.tsv), [positive_rep_seq.fasta](./pos_cluster/pos_rep_seq.tsv), [neg_all_seq.fasta](./pos_cluster/pos_all_seq.tsv ) was obtained using as input *positive_dataset.tsv*. 
+  The same output files ( [positive_cluster.tsv](./pos_cluster/pos_cluster.tsv), [positive_rep_seq.fasta](./pos_cluster/pos_rep_seq.tsv), [neg_all_seq.fasta](./pos_cluster/pos_all_seq.tsv ) was obtained using as input *positive_dataset.fasta*. 
 
 ---
 
