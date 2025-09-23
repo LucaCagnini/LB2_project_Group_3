@@ -39,4 +39,11 @@ Cross-validation alone is not sufficient to guarantee an unbiased estimate of ge
 
 Creating a proper holdout dataset is **not trivial** and requires specific criteria to avoid biased results: in protein bioinformatics, **sequence similarity** must be carefully considered.This applies both to **cross-validation splits** and to the **selection of a reliable holdout set**.
 
+### Results
+ | Non-redundant positives | Non-redundant negatives | N-r negatives with helix transmembrane |
+|--------------------------|-------------------------|----------------------------------------|
+|          1093            |          8934           |             636                        |
+
+
+
 
