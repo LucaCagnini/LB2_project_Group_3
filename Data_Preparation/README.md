@@ -19,7 +19,7 @@ Cross-validation alone is not sufficient to guarantee an unbiased estimate of ge
 
 ---
 
-### Redundancy Reduction
+## Redundancy Reduction
 
 Before splitting the data, it is essential to create a **non-redundant dataset**.  
 This involves:
@@ -45,7 +45,7 @@ results filtered from a proper [script](./output_recap.ipynb) are visualised bel
 
 ---
 
-### Data Splitting Strategy
+## Data Splitting Strategy
 
 To ensure proper training and unbiased evaluation, the dataset is divided as follows:
 
