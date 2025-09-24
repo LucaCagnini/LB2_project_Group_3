@@ -57,13 +57,27 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
   - Build **5-fold cross-validation subsets** from the training set.
   - Each split preserves the overall **positive/negative ratio**.
   - Store information about the cross-validation subset each protein belongs to, so results remain reproducible.
-  
 
+  Our approach was to generate a .tsv file using the script [prepare_dataset](./prepare_datasets.ipynb),containing representative entries obtained after clustarisation. .tsv contains the following columns
+  - EntryID
+  - OrganismName
+  - Kingdom
+  - Sequence length
+  - HelixDomain ( True/False for the negative entries, NaN for the positive ones)
+  - Class ( Negative/Positive)
+  - SPstart (defined for positive entries)
+  - SPend (defined for positives entries)
+  - Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)
+  - Sequence
+  
 ## Results 
 
- | Non-redundant positives | Non-redundant negatives | N-r negatives with helix transmembrane |
-|--------------------------|-------------------------|----------------------------------------|
-|          1093            |          8934           |             636                        |
+|       Dataset          |        Negatives        |     Positives     |
+|-------------------------|-------------------------|-------------------|
+|  Training Sets (total)  |          8021           |      2006         |
+| Benchmark Set           |          1787           |      219          |
+
+---
 
 
 
