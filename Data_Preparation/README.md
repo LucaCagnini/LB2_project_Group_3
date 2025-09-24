@@ -57,8 +57,13 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
   - Build **5-fold cross-validation subsets** from the training set.
   - Each split preserves the overall **positive/negative ratio**.
   - Store information about the cross-validation subset each protein belongs to, so results remain reproducible.
+  
 
+## Results 
 
+ | Non-redundant positives | Non-redundant negatives | N-r negatives with helix transmembrane |
+|--------------------------|-------------------------|----------------------------------------|
+|          1093            |          8934           |             636                        |
 
 
 
