@@ -59,18 +59,21 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
   - Store information about the cross-validation subset each protein belongs to, so results remain reproducible.
 
   Our approach was to generate a .tsv file using the script [prepare_dataset](./prepare_datasets.ipynb),containing representative entries obtained after clustarisation. .tsv contains the following columns
-  - EntryID
-  - OrganismName
-  - Kingdom
-  - Sequence length
-  - HelixDomain ( True/False for the negative entries, NaN for the positive ones)
-  - Class ( Negative/Positive)
-  - SPstart (defined for positive entries)
-  - SPend (defined for positives entries)
-  - Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)
-  - Sequence
+- EntryID
+- OrganismName
+- Kingdom
+- Sequence length
+- HelixDomain ( True/False for the negative entries, NaN for the positive ones)
+- Class ( Negative/Positive)
+- SPstart (defined for positive entries)
+- SPend (defined for positives entries)
+- Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)
+- Sequence
   
 ## Results 
+
+Resulting numbers are visualised on the table below
+
 
 |       Dataset          |        Negatives        |     Positives      |  
 |-------------------------|-------------------------|-------------------|
