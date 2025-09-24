@@ -8,7 +8,7 @@ Once the preliminary data are collected, the dataset needs to be divided into tw
 - **Benchmarking set**  
   Also known as the *holdout dataset*, it is reserved for testing the generalization performance of the models.
 
-### Benchmarking Set: Motivation
+1. ### Benchmarking Set: Motivation
 Cross-validation alone is not sufficient to guarantee an unbiased estimate of generalization performance:
 
 - Hyperparameter tuning through cross-validation and grid search may still introduce **overfitting**.  
@@ -19,7 +19,7 @@ Cross-validation alone is not sufficient to guarantee an unbiased estimate of ge
 
 ---
 
-## Redundancy Reduction
+2. ## Redundancy Reduction
 
 Before splitting the data, it is essential to create a **non-redundant dataset**.  
 This involves:
@@ -28,7 +28,7 @@ This involves:
 - Selecting **one representative sequence per cluster** 
 Once redundancy has been addressed, the split can safely be performed randomly.
 
-### MMseqs2
+3. ### MMseqs2
 
 For the clusterisation procedure the **MMseqs2** software (version 14.7e284) was used. MMseqs2 is an open-source software use to cluster large databases of sequences. input file were: negative_dataset.fasta and positive_dataset.fasta. For each run two output files were created. For the negative set: 
 - [neg_cluster.tsv](./neg_cluster/neg_cluster.tsv): .TSV containing two colums ( ID of each sequence in th input file, ID of the representative sequence indetifying the cluster). 
@@ -36,7 +36,7 @@ For the clusterisation procedure the **MMseqs2** software (version 14.7e284) was
 - [neg_all_seq.fasta](./neg_cluster/neg_all_seq.tsv): .fasta file with all the sequences used. 
   The same output files ( [positive_cluster.tsv](./pos_cluster/pos_cluster.tsv), [positive_rep_seq.fasta](./pos_cluster/pos_rep_seq.tsv), [neg_all_seq.fasta](./pos_cluster/pos_all_seq.tsv ) was obtained using as input *positive_dataset.fasta*. ù
   
-### Results
+4. ### Results
 results filtered from a proper [script](./output_recap.ipynb) are visualised below: 
 
  | Non-redundant positives | Non-redundant negatives | N-r negatives with helix transmembrane |
@@ -45,7 +45,7 @@ results filtered from a proper [script](./output_recap.ipynb) are visualised bel
 
 ---
 
-## Data Splitting Strategy
+5. ## Data Splitting Strategy
 
 To ensure proper training and unbiased evaluation, the dataset is divided as follows:
 
@@ -70,7 +70,7 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
 - Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)
 - Sequence
   
-## Results 
+6. ## Results 
 
 Resulting numbers are visualised on the table below
 
