@@ -72,10 +72,11 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
   
 ## Results 
 
-|       Dataset          |        Negatives        |     Positives     |
+|       Dataset          |        Negatives        |     Positives      |  
 |-------------------------|-------------------------|-------------------|
-|  Training Sets (total)  |          8021           |      2006         |
-| Benchmark Set           |          1787           |      219          |
+|  Training Sets (total)  |          7147           |       874         |  
+| Benchmark Set           |          1787           |       219         |
+| Total                   |          8934           |       1093        |
 
 ---
 
