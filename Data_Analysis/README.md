@@ -1,6 +1,6 @@
 # Protein Sequence Length and Signal Peptide Analysis
 
-To explore and visualize several properties of protein sequences in both **training** and **benchmarking** datasets the script plots.ipynb has been produced.
+To explore and visualize several properties of protein sequences in both **training** and **benchmarking** datasets the script *plots.ipynb* has been produced.
 The script analyses focus on sequence lengths, signal peptide (SP) properties, amino acid composition, taxonomic distribution, and SP cleavage sites.
 
 ---
