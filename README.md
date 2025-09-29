@@ -6,7 +6,7 @@ This repository contains files and codes of the project for the Laboratory of Bi
 
 1. [Data Collection](#data-collection)  
 2. [Data_Preparation](#data-preparation)  
-3. [Analysis](#analysis)  
+3. [Data_analysis](#data-analysis)  
 4. [Feature extraction](#feature-extraction)  
 5. [Implement ML algorithms](#implement-ml-algorithms)  
 6. [Model evaluation](#model-evaluation)  
@@ -29,7 +29,10 @@ Preprocess datasets for cross-validation and benchmarking, including:
 [Data_Preparation](./Data_Preparation)
 
 # Analysis
-Analyze and visualize dataset statistics
+Analyze and visualize dataset statistics:
+- gain an insight about data quality across datasets (benchmark/training)
+[Analysis](./Analysis)
+
 
 # Feature extraction
 Extract relevant features for classification
