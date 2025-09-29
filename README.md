@@ -28,7 +28,7 @@ Preprocess datasets for cross-validation and benchmarking, including:
 
 [Data_Preparation](./Data_Preparation)
 
-# Analysis
+# Data Analysis
 Analyze and visualize dataset statistics:
 - gain an insight about data quality across datasets (benchmark/training)
 [Analysis](./Analysis)
