@@ -31,7 +31,8 @@ Preprocess datasets for cross-validation and benchmarking, including:
 # Data Analysis
 Analyze and visualize dataset statistics:
 - gain an insight about data quality across datasets (benchmark/training)
-[Analysis](./Analysis)
+
+[Data-analysis](./Data_Analysis)
 
 
 # Feature extraction
