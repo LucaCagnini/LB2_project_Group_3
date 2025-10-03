@@ -1,4 +1,4 @@
-### **The VonHeijne method for SP detection** 
+# **The VonHeijne method for SP detection** 
 This repository contains the implementation of the **Von Heijne method** for signal peptide cleavage site prediction.
 The method builds a **Position-Specific Weight Matrix (PSWM)** using experimentally validated protein sequences and compares them against background amino acid frequencies (SwissProt). Pseudocount +1 was used to avoid zero probabilities. 
 For the method implementation, the following parameters were considered: 
@@ -17,14 +17,14 @@ The input DataFrame used must contain sequences and a SPEnd index for the cleava
 The script *validation_and_testing_vonheijne* provides code to evaluate the performance of the Von Heijne algorithm for signal peptide cleavage site prediction.
 The evaluation is split into three main steps:
 
-1. # **Scoring with the PSWM**
+### 1. **Scoring with the PSWM**
 Each sequence is scanned with a sliding window (14–15 aa length). For each window, a score is computed by summing log-odds values from the Position-Specific Weight Matrix (PSWM).The highest-scoring window is retained as the candidate cleavage site.
 
-2. # **Threshold optimization (Validation set)**
+### 2.  **Threshold optimization (Validation set)**
 
 Precision–Recall curves are computed on the validation set. The best threshold is chosen by maximizing the F1-score.
 
-3. # **Testing and metrics**
+### 3.  **Testing and metrics**
 On the test set, predictions are evaluated using:
 - Matthews Correlation Coefficient (MCC)
 - Accuracy (ACC)
