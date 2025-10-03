@@ -6,7 +6,7 @@ For the method implementation, the following parameters were considered:
 - Background distribution: SwissProt amino acid frequencies
 - PSWM: built from positive examples (proteins with confirmed signal peptides)
 - Goal: identify likely cleavage sites by comparing observed amino acid frequencies with the   background model
-- 
+
 ## **PSWM implementation** 
 
 The script *create_pswm.ipynb* was produced to build a Position-Specific Weight Matrix (PSWM) from a training dataset of proteins with annotated signal peptides in the *train_bench.tsv* file. 
