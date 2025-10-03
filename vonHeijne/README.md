@@ -9,12 +9,12 @@ For the method implementation, the following parameters were considered:
 
 ## **PSWM implementation** 
 
-The script *create_pswm.ipynb* was produced to build a Position-Specific Weight Matrix (PSWM) from a training dataset of proteins with annotated signal peptides in the *train_bench.tsv* file. 
+The script *create_pswm.ipynb*[/create_pswm.ipynb] was produced to build a Position-Specific Weight Matrix (PSWM) from a training dataset of proteins with annotated signal peptides in the *train_bench.tsv* file. 
 The input DataFrame used must contain sequences and a SPEnd index for the cleavage site.
 
 ## **Evaluation of the Von Heijne Method**
 
-The script *validation_and_testing_vonheijne* provides code to evaluate the performance of the Von Heijne algorithm for signal peptide cleavage site prediction.
+The script *validation_and_testing_vonheijne*[/validation_and_testing_vonheijne] provides code to evaluate the performance of the Von Heijne algorithm for signal peptide cleavage site prediction.
 The evaluation is split into three main steps:
 
 ### 1. **Scoring with the PSWM**
