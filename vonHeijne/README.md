@@ -30,7 +30,9 @@ On the test set, predictions are evaluated using:
 - Accuracy (ACC)
 - Precision (PPV)
 - Recall (SEN)
-  Precision ↑
+
+
+  Precision↑
 │             ● Best threshold
 │            /
 │           /
