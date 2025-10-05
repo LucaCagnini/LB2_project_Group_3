@@ -1,7 +1,7 @@
 # Data Collection
 
 The first step of the project is **data collection**: for any machine learning model, it is necessary to acquire high-quality data to ensure correct training.  
-We retrieved relevant protein sequences from the [UniProt](https://www.uniprot.org/) database, filtering them into two different datasets: a **positive** and a **negative** set.  
+We retrieved relevant protein sequences from the [UniProt](https://www.uniprot.org/) database, filtering them into two different datasets: a **positive** one containing proteins with the signal peptide, and a **negative** set of proteins without it.  
 
 Our approach was divided into two consecutive steps:
 1. Retrieval of proteins using the **web interface**.  
@@ -94,6 +94,7 @@ The number of proteins retrived after the search is showed in the table below.
 | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
+
 
 
 
