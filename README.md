@@ -24,7 +24,7 @@ The first step of the analysis was to retrieve relevant datasets of protein sequ
 
  ## Results 
 
-Results were saved in two .tsv files: [positive_dataset.tsv](Data_Collection/positive_dataset.tsv) [negative_dataset.tsv](/Data_collection/negative_dataset.tsv). 
+Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/positive_dataset.tsv) [negative_dataset.tsv](/Data_collection/negative_dataset.tsv). 
 
  | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
@@ -37,10 +37,9 @@ Preprocess datasets for cross-validation and benchmarking, including:
 - training and benchmark set creation: splitting positive and negative datasets into two subsets
 - redundancy reduction: performend using the MMseqs2 clustering tool
 
-# Results 
+## Results 
 
-Results of our analysis were saved on the file [train_bench.tsv](/Data_Preparation
-/train_bench.tsv) . 
+Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparation/train_bench.tsv). 
 
 |       Dataset          |        Negatives        |     Positives      |  
 |-------------------------|-------------------------|-------------------|
