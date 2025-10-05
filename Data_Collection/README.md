@@ -87,13 +87,13 @@ After the API calls, our data were saved in:
   2. Negative set: UniProt accession, organism name, Eukaryotic kingdom, protein length, presence of a transmembrane helix within the first 90 residues.
 
 - .fasta format: containing the protein sequences.
-- 
 The number of proteins retrived after the search is showed in the table below. 
 
 
 | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
+
 
 
 
