@@ -65,7 +65,7 @@ Resulting plot were saved on three folders:
 - [Taxonomy_classification](/Data_analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
 
 
-# Von Heijne (VH)
+# Von Heijne
 Implement von Heijne’s algorithm. 
 
 # Model evaluation
