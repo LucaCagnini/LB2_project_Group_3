@@ -15,11 +15,16 @@ This repository contains files and codes of the project for the Laboratory of Bi
 
 # Data Collection
 
-Retrieve relevant datasets from UniProtKB. This approach included two step:
-- Web interface approach
-- API approach
+The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two datasets were created, a positive one containing the signal peptide, and a negative one without. This approach included two step:
+- Web interface approach: advance query search using web interface. 
+- API approach: APi call to the UniProtKB/swiss-Prot database.
 
 [Data_collection](./Data_Collection)
+
+ ## Results 
+ | Positive Set | Negative Set | Negative with HD | 
+|--------------|--------------|------------------|
+|  2932        |    20615     |      1384        |
 
 # Data Preparation
 Preprocess datasets for cross-validation and benchmarking, including:
