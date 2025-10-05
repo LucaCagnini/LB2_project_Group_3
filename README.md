@@ -7,7 +7,7 @@ This repository contains files and codes of the project for the Laboratory of Bi
 1. [Data Collection](#data-collection)  
 2. [Data_Preparation](#data-preparation)  
 3. [Data_analysis](#data-analysis)  
-4. [Feature extraction](#feature-extraction)  
+4. [Von Heijne](#von-heijne)  
 5. [Implement ML algorithms](#implement-ml-algorithms)  
 6. [Model evaluation](#model-evaluation)  
 7. [Discussion](#discussion)  
@@ -50,17 +50,23 @@ Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparat
 
 
 # Data Analysis
-Analyze and visualize dataset statistics:
-- gain an insight about data quality across datasets (benchmark/training)
-
 [Data-analysis](./Data_Analysis)
 
+Exploratory statistical analysis of the datasets, essential to asses adequacy of the datasets for our porpouse, aimed to confirm dataset quality. 
+- Detect dataset **biases** (length, amino acid composition, taxonomy).
+- Assess whether sequence properties are **informative features** for classification tasks.
+- Evaluate differences between **training** and **benchmarking** datasets.
+- gain an insight about data quality across datasets (benchmark/training).
 
-# Feature extraction
-Extract relevant features for classification
+## Results
+Resulting plot were saved on three folders:
+- [SequenceLogo](/Data_analysis/SequenceLogo) Contains sequence logo visualizations representing conserved regions and amino acid preferences across datasets.
+- [Sequence_lengths_comparison](/Data_analysis/Sequence_lengths_comparison) Includes analyses and plots comparing sequence length distributions between datasets.
+- [Taxonomy_classification](/Data_analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
 
-# Implement ML algorithms
-Implement von Heijne’s algorithm and the SVM classifier
+
+# Von Heijne (VH)
+Implement von Heijne’s algorithm. 
 
 # Model evaluation
 Evaluate methods using cross-validation and a blind test set
