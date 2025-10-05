@@ -31,7 +31,7 @@ On the test set, predictions are evaluated using:
 - Precision (PPV)
 - Recall (SEN)
 
-### 4. 5-Fold Cross-Validation
+## 5-Fold Cross-Validation
 
 A more robust evaluation of the Von Heijne method is performed using a 5-fold cross-validation on the train_bench.tsv dataset using the [vonheijne](/voneijne.ipynb):
 - Splitting: In each fold, one set is used for testing, one for validation, and the remaining three sets for training.
