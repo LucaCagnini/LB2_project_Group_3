@@ -15,13 +15,17 @@ This repository contains files and codes of the project for the Laboratory of Bi
 
 # Data Collection
 
+[Data_collection](./Data_Collection)
+
 The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two datasets were created, a positive one containing the signal peptide, and a negative one without. This approach included two step:
 - Web interface approach: advance query search using web interface. 
 - API approach: APi call to the UniProtKB/swiss-Prot database.
 
-[Data_collection](./Data_Collection)
 
  ## Results 
+
+Results were saved in two .tsv files: [positive_dataset.tsv](./Data_collection/positive_dataset.tsv) [negative_dataset.tsv](./Data_collection/negative_dataset.tsv). 
+
  | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
