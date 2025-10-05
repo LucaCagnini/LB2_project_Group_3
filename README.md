@@ -31,11 +31,24 @@ Results were saved in two .tsv files: [positive_dataset.tsv](Data_Collection/pos
 |  2932        |    20615     |      1384        |
 
 # Data Preparation
-Preprocess datasets for cross-validation and benchmarking, including:
-- training and benchmark set creation
-- redundancy reduction
-
 [Data_Preparation](./Data_Preparation)
+
+Preprocess datasets for cross-validation and benchmarking, including:
+- training and benchmark set creation: splitting positive and negative datasets into two subsets
+- redundancy reduction: performend using the MMseqs2 clustering tool
+
+# Results 
+
+Results of our analysis were saved on the file [train_bench.tsv](/Data_Preparation
+/train_bench.tsv) . 
+
+|       Dataset          |        Negatives        |     Positives      |  
+|-------------------------|-------------------------|-------------------|
+|  Training Sets (total)  |          7147           |       874         |  
+| Benchmark Set           |          1787           |       219         |
+| Total                   |          8934           |       1093        |
+
+
 
 # Data Analysis
 Analyze and visualize dataset statistics:
