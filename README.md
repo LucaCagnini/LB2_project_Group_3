@@ -66,7 +66,17 @@ Resulting plot were saved on three folders:
 
 
 # Von Heijne
-Implement von Heijne’s algorithm. 
+Von Heijne’s algorithm is an algorithm invented by Gunnar von Heijne in the 1980s–1990s, often used in combination with experimental data to analyze protein targeting. Implementation involved the creation of a PSWM (position specific weight metric combined with a 5-fold cross validation method, using appropirate measures for testing our analysis. 
+## Results 
+After cross-validation method, a mean value of each metric was calculated and it is shown below. 
+
+ | Metric      | Mean ± Std  |
+|------------|-------------|
+| MCC        | 0.663 ± 0.016 |
+| Precision  | 0.934 ± 0.003 |
+| Accuracy   | 0.691 ± 0.014 |
+| Sensitivity| 0.711 ± 0.029 |
+
 
 # Model evaluation
 Evaluate methods using cross-validation and a blind test set
