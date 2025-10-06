@@ -30,6 +30,8 @@ Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/p
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
 
+---
+
 # Data Preparation
 [Data_Preparation](./Data_Preparation)
 
@@ -48,6 +50,7 @@ Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparat
 | Total                   |          8934           |       1093        |
 
 
+---
 
 # Data Analysis
 [Data-analysis](./Data_Analysis)
@@ -64,6 +67,7 @@ Resulting plot were saved on three folders:
 - [Sequence_lengths_comparison](/Data_analysis/Sequence_lengths_comparison) Includes analyses and plots comparing sequence length distributions between datasets.
 - [Taxonomy_classification](/Data_analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
 
+---
 
 # Von Heijne
 [von_Heijne](./vonHeijne)
@@ -79,6 +83,7 @@ After cross-validation method, a mean value of each metric was calculated and it
 | Accuracy   | 0.691 ± 0.014 |
 | Sensitivity| 0.711 ± 0.029 |
 
+---
 
 # Model evaluation
 Evaluate methods using cross-validation and a blind test set
