@@ -39,4 +39,15 @@ A more robust evaluation of the Von Heijne method is performed using a 5-fold cr
 - Metrics: For each fold, the following metrics are computed on the test set: MCC, PPV, ACC, SEN
 - Visualization: Precision–Recall curves are plotted for each fold, highlighting the best threshold determined from the validation set.
 
+## Results 
+After cross-validation method, a mean value of each metric was calculated and it is shown below. 
+
+ | Metric      | Mean ± Std  |
+|------------|-------------|
+| MCC        | 0.663 ± 0.016 |
+| Precision  | 0.934 ± 0.003 |
+| Accuracy   | 0.691 ± 0.014 |
+| Sensitivity| 0.711 ± 0.029 |
+
+
 
