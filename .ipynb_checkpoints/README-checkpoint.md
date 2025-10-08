@@ -1,0 +1,83 @@
+# **LB2_project_Group_3**
+This repository contains files and codes of the project for the Laboratory of Bioinformatics 2 course.
+
+---
+## Table of Contents
+
+1. [Data Collection](#data-collection)  
+2. [Data_Preparation](#data-preparation)  
+3. [Data_analysis](#data-analysis)  
+4. [Von Heijne](#von-heijne)  
+5. [Implement ML algorithms](#implement-ml-algorithms)  
+6. [Model evaluation](#model-evaluation)  
+7. [Discussion](#discussion)  
+---
+
+# Data Collection
+
+[Data_collection](./Data_Collection)
+
+The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two datasets were created, a positive one containing the signal peptide, and a negative one without. This approach included two step:
+- Web interface approach: advance query search using web interface. 
+- API approach: APi call to the UniProtKB/swiss-Prot database.
+
+
+ ## Results 
+
+Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/positive_dataset.tsv) [negative_dataset.tsv](/Data_collection/negative_dataset.tsv). 
+
+ | Positive Set | Negative Set | Negative with HD | 
+|--------------|--------------|------------------|
+|  2932        |    20615     |      1384        |
+
+# Data Preparation
+[Data_Preparation](./Data_Preparation)
+
+Preprocess datasets for cross-validation and benchmarking, including:
+- training and benchmark set creation: splitting positive and negative datasets into two subsets
+- redundancy reduction: performend using the MMseqs2 clustering tool
+
+## Results 
+
+Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparation/train_bench.tsv). 
+
+|       Dataset          |        Negatives        |     Positives      |  
+|-------------------------|-------------------------|-------------------|
+|  Training Sets (total)  |          7147           |       874         |  
+| Benchmark Set           |          1787           |       219         |
+| Total                   |          8934           |       1093        |
+
+
+
+# Data Analysis
+[Data-analysis](./Data_Analysis)
+
+Exploratory statistical analysis of the datasets, essential to asses adequacy of the datasets for our porpouse, aimed to confirm dataset quality. 
+- Detect dataset **biases** (length, amino acid composition, taxonomy).
+- Assess whether sequence properties are **informative features** for classification tasks.
+- Evaluate differences between **training** and **benchmarking** datasets.
+- gain an insight about data quality across datasets (benchmark/training).
+
+## Results
+Resulting plot were saved on three folders:
+- [SequenceLogo](/Data_analysis/SequenceLogo) Contains sequence logo visualizations representing conserved regions and amino acid preferences across datasets.
+- [Sequence_lengths_comparison](/Data_analysis/Sequence_lengths_comparison) Includes analyses and plots comparing sequence length distributions between datasets.
+- [Taxonomy_classification](/Data_analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
+
+
+# Von Heijne
+Implement von Heijne’s algorithm. 
+
+# Model evaluation
+Evaluate methods using cross-validation and a blind test set
+
+# Discussion
+Discuss and report results
+
+# Contacts
+- Giacomo Timelli - giacomo.timelli@studio.unibo.it
+- Luca Cagnini - luca.cagnini@studio.unibo.it
+- Marco Centenaro - marco.centenaro@studio.unibo.it
+- Marco Cuscunà - marco.cuscuna@studio.unibo.it
+- Marina Mariano - marina.mariano@studio.unibo.it
+
