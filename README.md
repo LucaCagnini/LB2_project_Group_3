@@ -8,7 +8,7 @@ This repository contains files and codes of the project for the Laboratory of Bi
 2. [Data_Preparation](#data-preparation)  
 3. [Data_analysis](#data-analysis)  
 4. [Von Heijne](#von-heijne)  
-5. [Implement ML algorithms](#implement-ml-algorithms)  
+5. [Feature_Selection](#feature_selection)  
 6. [Model evaluation](#model-evaluation)  
 7. [Discussion](#discussion)  
 ---
@@ -84,6 +84,9 @@ After cross-validation method, a mean value of each metric was calculated and it
 | Sensitivity| 0.711 ± 0.029 |
 
 ---
+
+# Feature Selection 
+[Feature_Selection](./Feature_selection)
 
 # Model evaluation
 Evaluate methods using cross-validation and a blind test set
