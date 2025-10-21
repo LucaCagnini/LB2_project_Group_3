@@ -88,6 +88,21 @@ After cross-validation method, a mean value of each metric was calculated and it
 # Feature Selection 
 [Feature_Selection](./Feature_Selection)
 
+Feature Extraction and Selection was implemented using Random Forest and SVM training optimized by 5 fold cross validation. 
+Results show strong and consistent predictive performance, with average MCC scores between 0.84 and 0.88 across all folds.
+
+## Performance Summary
+
+| Fold | Best k | Validation MCC | Test MCC |
+|------|--------:|----------------:|----------:|
+| 1 | 27 | 0.868 | 0.825 |
+| 2 | 28 | 0.877 | 0.862 |
+| 3 | 13 | 0.839 | 0.854 |
+| 4 | 11 | 0.857 | 0.798 |
+| 5 | 35 | 0.845 | 0.883 |
+
+**Average Test MCC:** ≈ **0.84–0.88**
+
 # Model evaluation
 Evaluate methods using cross-validation and a blind test set
 
