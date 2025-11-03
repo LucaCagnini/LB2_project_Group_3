@@ -111,7 +111,7 @@ Results show strong and consistent predictive performance, with average MCC scor
 **Average Test MCC:** ≈ **0.84–0.88**
 
 # Performance Evaluation
-[Performance_evaluation](./Performance_SVM)
+[Performance_evaluation](./performance_SVM)
 
 Performance evaluation procedure consisted into a hyperparameter tuning procedure for the SVM algorithm and the VonHeijne method. Classical performance measures were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
 
