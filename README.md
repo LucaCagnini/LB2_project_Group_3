@@ -16,7 +16,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 3. [Data_analysis](#data-analysis)  
 4. [Von Heijne](#von-heijne)  
 5. [Feature Selection](#feature-selection)  
-6. [Model evaluation](#model-evaluation)  
+6. [Performance evaluation](#performance-evaluation)  
 7. [Discussion](#discussion)  
 ---
 
