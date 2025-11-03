@@ -1,11 +1,12 @@
 # **LB2_project_Group_3**
 
 # **Introduction**
-This repository contains files and codes of the project for the Laboratory of Bioinformatics 2 course. The aim of the project was to analyze and compare three different computational approaches for the prediction of Signal peptides (SPs). Signal peptides (SPs) are short, essential sequences that guide proteins to their
+This repository contains files and codes of the project for the **Laboratory of Bioinformatics 2 course**. The aim of the project was to analyze and compare three different **computational approaches** for the prediction of **Signal peptides (SPs)**. 
+Signal peptides (SPs) are short, essential sequences that guide proteins to their
 correct cellular locations, significantly influencing protein functionality and various cellular processes.
 While numerous computational methods exist for SP prediction, machine learning techniques,
-particularly Support Vector Machines (SVM) and Multi-Layer Perceptrons (MLP), have shown substantial
-improvements over traditional methods like the Von Heijne algorithm
+particularly **Support Vector Machines (SVM)** and **Multi-Layer Perceptrons (MLP)**, have shown substantial
+improvements over traditional methods like the **Von Heijne algorithm**.
 
 ---
 ## Table of Contents
