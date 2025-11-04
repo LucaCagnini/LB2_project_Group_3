@@ -117,10 +117,10 @@ Performance evaluation procedure consisted into a hyperparameter tuning procedur
 
 ## Performance Summary 
 
- | Metod     | MCC ± Std    |
-|------------|--------------|
-| VonHeijne  | 0.688 ± 0.000 |
-| SVM        | 0.808 ± 0.000 |
+ | Metod     |   MCC  |
+|------------|--------|
+| VonHeijne  | 0.688  |
+| SVM        | 0.808  |
 # Discussion
 Discuss and report results
 
