@@ -60,19 +60,22 @@ This phase combines **Random Forest feature ranking** with **SVM optimization**.
 
 ### 4. Final Features
 - For training of the final model we chose the features that appeared in all 5 cross validation runs.
-- The chosen features are:  
-1. VhonHeijne score
-2. C residue frequency
-3. Max transmembrane tendency
-4. Mean Helix propensity
-5. Mean Hydrophobicity computed using Myazawa scale
-6. D residue frequency
-7. T residue frequency
-8. R residue frequency
-9. Max Beta-sheet propensity
-10. N residue frequency
-11. Max flexibility
-12. Mean Membrane propensity
-13. Mean Bulkiness 
-14. M residue frequency
-15. Max Hydrophobicity computed using Argos scale
+- The chosen features are:
+
+|   |Feature |
+|------|--------:|
+| 1 |VhonHeijne score |
+| 2 |C residue frequency |
+| 3 |Max transmembrane tendency|| 
+| 4 |Mean Helix propensity |
+| 5 |Mean Hydrophobicity computed using Myazawa scale |
+| 6 |D residue frequency |
+| 7 |T residue frequency |
+| 8 |R residue frequency |
+| 9 |Max Beta-sheet propensity |
+| 10 |N residue frequency |
+| 11 |Max flexibility |
+| 12 |Mean Membrane propensity |
+| 13 |Mean Bulkiness  |
+| 14 |M residue frequency | 
+| 15 | Max Hydrophobicity computed using Argos scale |
