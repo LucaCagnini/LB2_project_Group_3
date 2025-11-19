@@ -1,6 +1,6 @@
 # Data Collection
 
-The first step of the project is **data collection**: for any machine learning model, it is necessary to acquire high-quality data to ensure correct training.  
+The first step of the project is **data collection**: for any machine learning procedure, it is necessary to acquire high-quality data to ensure correct model training.  
 We retrieved relevant protein sequences from the [UniProt](https://www.uniprot.org/) database, filtering them into two different datasets: a **positive** one containing proteins with the signal peptide, and a **negative** set of proteins without it.  
 
 Our approach was divided into two consecutive steps:
@@ -12,6 +12,8 @@ Our approach was divided into two consecutive steps:
 ## 1. Web Interface Approach
 
 We started using the *Advanced Search* interface in UniProt (Release 2025_03) to filter and retrieve datasets.
+
+---
 
 ### Positive Set
 
@@ -32,6 +34,8 @@ Curated eukaryotic proteins, ≥40 aa, experimentally confirmed, non-fragment, w
 The API URL using the search endpoint for positive set was retrived. This endpoint is lighter and returns chunks of 500 at a time and requires pagination: 
 
 https://rest.uniprot.org/uniprotkb/search?format=json&query=%28%28existence%3A1%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28reviewed%3Atrue%29+AND+%28taxonomy_id%3A2759%29+AND+%28fragment%3Afalse%29+AND+%28ft_signal_exp%3A*%29%29&size=500
+
+---
 
 ### Negative set
 
@@ -65,7 +69,7 @@ https://rest.uniprot.org/uniprotkb/search?format=json&query=%28%28fragment%3Afal
 
 ## 2. API approach
 
-Two Python scripts were created:
+Two Python scripts were created for our customised search:
 
 [get_dataset_neg.ipynb](./get_dataset_neg.ipynb)
  → for the positive set
@@ -75,24 +79,25 @@ Two Python scripts were created:
 
 These scripts perform the API calls to UniProt, generate output files in both .tsv and .fasta formats, and apply additional filtering:
 
-- Positive set: filtering out proteins with a signal peptide shorter than 14 residues and without a cleavage site.
+- **Positive set**: filtering out proteins with a signal peptide shorter than 14 residues and without a cleavage site.
 
-- Negative set: checking for proteins with a transmembrane helix starting within the first 90 residues.
+- **Negative set**: checking for proteins with a transmembrane helix starting within the first 90 residues.
   
 ## 3. Data collection output
 
 After the API calls, our data were saved in:
-- .tsv format: containing metadata for each protein.
-  1. Positive set: UniProt accession, organism name, Eukaryotic kingdom, protein length, signal peptide cleavage site position.
-  2. Negative set: UniProt accession, organism name, Eukaryotic kingdom, protein length, presence of a transmembrane helix within the first 90 residues.
+- **.tsv** format: containing metadata for each protein.
+  1. **Positive set:** UniProt accession, organism name, Eukaryotic kingdom, protein length, signal peptide cleavage site position.
+  2. **Negative set:** UniProt accession, organism name, Eukaryotic kingdom, protein length, presence of a transmembrane helix within the first 90 residues.
 
-- .fasta format: containing the protein sequences.
+- **.fasta** format: containing the protein sequences.
 The number of proteins retrived after the search is showed in the table below. 
 
 
 | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
+
 
 
 
