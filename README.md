@@ -32,7 +32,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 
 # Data Collection
 
-[Data_collection](./Data_Collection)
+Repository: [Data_collection](./Data_Collection)
 
 The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two proteins datasets were created, a positive one containing the signal peptide, and a negative one with all the others. This approach included two step:
 - Web interface approach: advance query search using web interface. 
@@ -50,9 +50,9 @@ Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/p
 ---
 
 # Data Preparation
-[Data_Preparation](./Data_Preparation)
+Repository: [Data_Preparation](./Data_Preparation)
 
-Preprocess datasets for cross-validation and benchmarking, including:
+This step included the preprocessing pipeline datasets for cross-validation and benchmarking, including:
 - training and benchmark set creation: splitting positive and negative datasets into two subsets
 - redundancy reduction: performend using the MMseqs2 clustering tool
 
