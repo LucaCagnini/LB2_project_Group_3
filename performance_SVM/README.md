@@ -1,13 +1,14 @@
 # **SVM Optimization**
 
-This repository contains the SVM optimization via Bayesian search and provides a performance analysis module to evaluate model quality and 
-  interpret false positives (FP) and false negatives (FN). 
+SVM optimization was developed  via Bayesian search and provides a performance analysis module to evaluate model quality and interpret false positives (FP) and false negatives (FN). 
 
-  ## **Bayesian search optimization**
-  The script **hyperparameter_tuning.ipynb** contains the implementation of the Bayesian search using an RBF SVM using BayesSearchCV. It reports best hyperparameters and MCC scores. Bayesian optimization uses past evaluations to predict where the best hyperparameters probably are, wasting  less time testing bad configurations. 
+---
 
-  ### **Results**
-  The table below shows the results of the hyperparameter tuining procedure. The MCC obtained suggest a better performance of the SVM method in respect to the classical approach of the VonHeije method. 
+## **Bayesian search optimization**
+The script **hyperparameter_tuning.ipynb** contains the implementation of the Bayesian search using an RBF SVM using BayesSearchCV. It reports best hyperparameters and MCC scores. Bayesian optimization uses past evaluations to predict where the best hyperparameters probably are, wasting  less time testing bad configurations. 
+
+### **Results**
+The table below shows the results of the hyperparameter tuining procedure. The MCC obtained suggest a better performance of the SVM method in respect to the classical approach of the VonHeije method. 
 
   
 | Hyperparameter | Value | Description |
@@ -17,13 +18,17 @@ This repository contains the SVM optimization via Bayesian search and provides a
 | `svm__kernel` | **rbf** | Kernel type used by the SVM (Radial Basis Function) |
 | **Best MCC (validation)** | **0.8569** | Matthews Correlation Coefficient obtained during cross-validation |
 
+---
+
 ## **Performance Analysis**
 
 The script **model_evaluation.ipynb** contains the evaluation procedure that took in account different features fo differentiate our results.
 During the model evaluation phase, several in-depth analyses were conducted to better understand the model’s behavior and error patterns, focusing on False Negatives (FN) and False Positives (FP).
 These analyses aim to identify biological or compositional reasons behind the misclassifications and assess the robustness of the feature set.
 
-### **False Negative (FN) Analysis**
+---
+
+## **False Negative (FN) Analysis**
 
 - **Taxonomy distribution:**
 Pie charts comparing the taxonomy of FN, FP, and total predictions.
@@ -44,7 +49,9 @@ Comparison of average hydrophobicity between TP and FN sequences.
 - **Feature-wise distributions:**
 In general, distributions were generated for all the most informative features to detect systematic differences between FN and TP samples.
 
- ### **False Positive (FP) Analysis**
+---
+
+## **False Positive (FP) Analysis**
 
 - **FPR on transmembrane proteins:**
 Calculation of the false positive rate (FPR) specifically for transmembrane domain proteins.
