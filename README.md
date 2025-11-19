@@ -70,9 +70,9 @@ Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparat
 ---
 
 # Data Analysis
-[Data-analysis](./Data_Analysis)
+Repository: [Data-analysis](./Data_Analysis)
 
-Exploratory statistical analysis of the datasets, essential to asses adequacy of the datasets for our porpouse, aimed to confirm dataset quality. 
+An exploratory statistical analysis of the datasets was essential to asses adequacy of the datasets for our porpouse, aimed to confirm dataset quality. 
 - Detect dataset **biases** (length, amino acid composition, taxonomy).
 - Assess whether sequence properties are **informative features** for classification tasks.
 - Evaluate differences between **training** and **benchmarking** datasets.
