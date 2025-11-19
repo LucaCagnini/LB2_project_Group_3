@@ -13,8 +13,6 @@ Our approach was divided into two consecutive steps:
 
 We started using the *Advanced Search* interface in UniProt (Release 2025_03) to filter and retrieve datasets.
 
----
-
 ### Positive Set
 
 **QUERY:** 
@@ -34,8 +32,6 @@ Curated eukaryotic proteins, ≥40 aa, experimentally confirmed, non-fragment, w
 The API URL using the search endpoint for positive set was retrived. This endpoint is lighter and returns chunks of 500 at a time and requires pagination: 
 
 https://rest.uniprot.org/uniprotkb/search?format=json&query=%28%28existence%3A1%29+AND+%28length%3A%5B40+TO+*%5D%29+AND+%28reviewed%3Atrue%29+AND+%28taxonomy_id%3A2759%29+AND+%28fragment%3Afalse%29+AND+%28ft_signal_exp%3A*%29%29&size=500
-
----
 
 ### Negative set
 
@@ -82,6 +78,8 @@ These scripts perform the API calls to UniProt, generate output files in both .t
 - **Positive set**: filtering out proteins with a signal peptide shorter than 14 residues and without a cleavage site.
 
 - **Negative set**: checking for proteins with a transmembrane helix starting within the first 90 residues.
+
+---
   
 ## 3. Data collection output
 
@@ -97,6 +95,7 @@ The number of proteins retrived after the search is showed in the table below.
 | Positive Set | Negative Set | Negative with HD | 
 |--------------|--------------|------------------|
 |  2932        |    20615     |      1384        |
+
 
 
 
