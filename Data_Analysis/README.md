@@ -14,8 +14,7 @@ This analysis is helpful to:
 
 ---
 
-## Requirements
-
+### Requirements
 To run the notebook, the following libraries are needed. 
   - `pandas`
   - `numpy`
@@ -28,6 +27,9 @@ Install them with:
 pip install pandas numpy matplotlib seaborn logomaker
 ```
 ---
+## Analysis
+
+The following elements were the subject of our analysis
 
 ### **1. Protein Length Distribution**
 - **Description**: Compares the lengths of protein sequences between **positive** and **negative** classes.  The goal was to identify potential differences in sequence length distributions across classes in both training and benchmarking datasets.
