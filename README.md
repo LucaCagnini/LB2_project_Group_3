@@ -103,13 +103,14 @@ After cross-validation method, a mean value of each metric was calculated and it
 
 ---
 
-# SVM: Feature Selection 
+# SVM:Feature Selection 
+
 Repository: [Feature_Selection](./Feature_Selection)
 
 The SVM (support Vector Machine) algorithm was trained using a Feature extraction adn selection procedure, taking into account several characteristics of the proteins dataset. It was implemented using Random Forest and SVM training optimized by 5 fold cross validation. 
 Results show strong and consistent predictive performance, with average MCC scores between 0.84 and 0.88 across all folds.
 
-## SVM: Performance Summary
+## Performance Summary
 
 | Fold | Best k | Validation MCC | Test MCC |
 |------|--------:|----------------:|----------:|
@@ -121,7 +122,7 @@ Results show strong and consistent predictive performance, with average MCC scor
 
 **Average Test MCC:** ≈ **0.84–0.88**
 
-# Performance Evaluation
+# SVM:Performance Evaluation
 [Performance_evaluation](./performance_SVM)
 
 Performance evaluation procedure consisted into a hyperparameter tuning procedure for the SVM algorithm. Classical performance measures (ex, MCC) were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
