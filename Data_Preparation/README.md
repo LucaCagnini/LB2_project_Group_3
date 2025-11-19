@@ -1,21 +1,22 @@
-## DATA PREPARATION: Building Training and Benchmarking Datasets
+# DATA PREPARATION 
 
 ---
-Once the preliminary data are collected, the dataset needs to be divided into two distinct subsets:
+## 1. Building Training and Benchmarking Datasets: Splitting
+
+Once the preliminary data are collected, the datasets need to be divided into two distinct subsets:
 
 - **Training set**  
-  Used to train the models, optimize hyperparameters, and perform cross-validation experiments.
+  Used to train the models, optimize hyperparameters, and perform cross-validation.
 - **Benchmarking set**  
   Also known as the *holdout dataset*, it is reserved for testing the generalization performance of the models.
 
- ### 1. Benchmarking Set: Motivation
+ ### Benchmarking Set: Motivation
 Cross-validation alone is not sufficient to guarantee an unbiased estimate of generalization performance:
 
 - Hyperparameter tuning through cross-validation and grid search may still introduce **overfitting**.  
 - A holdout dataset provides a stronger guarantee of the *never-seen-before* condition.  
 - The model tested on the benchmarking set is the one intended for **production** use.  
 - During cross-validation, models are trained on slightly different subsets of the training dataset, which may bias results.
-
 
 ---
 
@@ -59,16 +60,20 @@ To ensure proper training and unbiased evaluation, the dataset is divided as fol
   - Store information about the cross-validation subset each protein belongs to, so results remain reproducible.
 
   Our approach was to generate a .tsv file using the script [prepare_dataset](./prepare_datasets.ipynb),containing representative entries obtained after clustarisation. .tsv contains the following columns
-- EntryID
-- OrganismName
-- Kingdom
-- Sequence length
-- HelixDomain ( True/False for the negative entries, NaN for the positive ones)
-- Class ( Negative/Positive)
-- SPstart (defined for positive entries)
-- SPend (defined for positives entries)
-- Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)
-- Sequence
+
+| Column |
+|--------------------------|
+|        1. EntryID              | 
+|        2. OrganismName              | 
+|        3. Kingdom              |
+|        4. Sequence length              |
+|        5. HelixDomain ( True/False for the negative entries, NaN for the positive ones)              |
+|        6. Class ( Negative/Positive)              |
+|        7. SPstart (defined for positive entries)              |
+|        8. SPend (defined for positives entries)              | 
+|        9. Set (from 1-5 for the entries of the training sets, Benchmark for the ones in the benchmark set)             |
+|        10. Sequence              | 
+
   
  ## 6. Results 
 
