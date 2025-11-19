@@ -24,8 +24,8 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 2. [Data_Preparation](#data-preparation)  
 3. [Data_analysis](#data-analysis)  
 4. [Von Heijne](#von-heijne)  
-5. [Feature Selection](#feature-selection)  
-6. [Performance evaluation](#performance-evaluation)  
+5. [SVM: Feature Selection](#svm:feature-selection)  
+6. [SVM:Performance evaluation](#performance-evaluation)  
 7. [Deep_Learning](#deep-learning)
 8.  [Discussion](#discussion)
 ---
@@ -103,13 +103,13 @@ After cross-validation method, a mean value of each metric was calculated and it
 
 ---
 
-# Feature Selection 
+# SVM: Feature Selection 
 Repository: [Feature_Selection](./Feature_Selection)
 
-Feature Extraction and Selection was implemented using Random Forest and SVM training optimized by 5 fold cross validation. 
+The SVM (support Vector Machine) algorithm was trained using a Feature extraction adn selection procedure, taking into account several characteristics of the proteins dataset. It was implemented using Random Forest and SVM training optimized by 5 fold cross validation. 
 Results show strong and consistent predictive performance, with average MCC scores between 0.84 and 0.88 across all folds.
 
-## Performance Summary
+## SVM: Performance Summary
 
 | Fold | Best k | Validation MCC | Test MCC |
 |------|--------:|----------------:|----------:|
@@ -124,7 +124,7 @@ Results show strong and consistent predictive performance, with average MCC scor
 # Performance Evaluation
 [Performance_evaluation](./performance_SVM)
 
-Performance evaluation procedure consisted into a hyperparameter tuning procedure for the SVM algorithm and the VonHeijne method. Classical performance measures were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
+Performance evaluation procedure consisted into a hyperparameter tuning procedure for the SVM algorithm. Classical performance measures (ex, MCC) were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
 
 ## Performance Summary 
 
