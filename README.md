@@ -1,12 +1,19 @@
-# **LB2_project_Group_3**
 
-# **Introduction**
+# **A Cross-Model Comparison of Secretiory Signal Peptide Prediction Techiques: Von Hijne, SVM, NN**
+
+## **Laboratory of Bioinformatics 2, A.Y. 2025/2026**
+
+Cagnini Luca,  Centenaro Marco,  Cuscunà Marco,  Mariano Marina,  Timelli Giacomo
+Bioinformatics, FABIT, Alma Mater Studiorum – University of Bologna, Italy
+
+## **Abstract**
 This repository contains files and codes of the project for the **Laboratory of Bioinformatics 2 course**. The aim of the project was to analyze and compare three different **computational approaches** for the prediction of **Signal peptides (SPs)**. 
 Signal peptides (SPs) are short, essential sequences that guide proteins to their
 correct cellular locations, significantly influencing protein functionality and various cellular processes.
 While numerous computational methods exist for SP prediction, machine learning techniques,
-particularly **Support Vector Machines (SVM)** and **Multi-Layer Perceptrons (MLP)**, have shown substantial
-improvements over traditional methods like the **Von Heijne algorithm**.
+particularly **Support Vector Machines (SVM)** and **Neural Networks**, have shown substantial
+improvements over traditional methods like the **Von Heijne algorithm**. 
+**Results:** The aim of the study is to confirm this hypothesis developing a correct workflow that higlights significant improvement on protein predictions of the firs two methods previously mentioned over the latter.  
 
 ---
 ## Table of Contents
@@ -17,14 +24,15 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 4. [Von Heijne](#von-heijne)  
 5. [Feature Selection](#feature-selection)  
 6. [Performance evaluation](#performance-evaluation)  
-7. [Discussion](#discussion)  
+7. [Deep_Learning](#deep-learning)
+8.  [Discussion](#discussion)
 ---
 
 # Data Collection
 
 [Data_collection](./Data_Collection)
 
-The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two datasets were created, a positive one containing the signal peptide, and a negative one without. This approach included two step:
+The first step of the analysis was to retrieve relevant datasets of protein sequences from UniProtKB. Two proteins datasets were created, a positive one containing the signal peptide, and a negative one with all the others. This approach included two step:
 - Web interface approach: advance query search using web interface. 
 - API approach: APi call to the UniProtKB/swiss-Prot database.
 
