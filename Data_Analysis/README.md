@@ -5,7 +5,7 @@ The script analyses focus on sequence lengths, signal peptide (SP) properties, a
 
 ---
 
-## Goals of the Analysis
+## Aim
 This analysis is helpful to: 
 - Detect dataset **biases** (length, amino acid composition, taxonomy).
 - Assess whether sequence properties are **informative features** for classification tasks.
@@ -29,19 +29,19 @@ pip install pandas numpy matplotlib seaborn logomaker
 ```
 ---
 
-### 1. Protein Length Distribution
+### **1. Protein Length Distribution**
 - **Description**: Compares the lengths of protein sequences between **positive** and **negative** classes.  The goal was to identify potential differences in sequence length distributions across classes in both training and benchmarking datasets.
 
-### 2. Signal Peptide (SP) Length Distribution
+### **2. Signal Peptide (SP) Length Distribution**
 - **Description**: Examines the lengths of signal peptides (SPs), to investigate whether SP lengths differ between classes or datasets.
 
-### 3. Amino Acid Composition Analysis
+### **3. Amino Acid Composition Analysis**
 - **Description**: Compares the amino acid (AA) composition of SP sequences against a **reference background distribution** (SwissProt database, see [SwissProt statistics](https://web.expasy.org/docs/relnotes/relstat.html)), to highlight amino acid biases characteristic of SPs compared to general proteins.
 
-### 4. Taxonomic Classification
+### **4. Taxonomic Classification**
 - **Description**: Analyzes the taxonomic origin of proteins at both **kingdom** and **species** levels. to explore how sequences are distributed across taxa, checking for possible dataset biases
 
-### 5. Sequence Logos of SP Cleavage Sites
+### **5. Sequence Logos of SP Cleavage Sites**
 - **Description**: Visualizes sequence motifs at SP cleavage sites. to identify conserved motifs and patterns around cleavage sites.
 ---
 
