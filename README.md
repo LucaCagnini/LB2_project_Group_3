@@ -24,7 +24,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 2. [Data_Preparation](#data-preparation)  
 3. [Data_analysis](#data-analysis)  
 4. [Von Heijne](#von-heijne)  
-5. [SVM: Feature Selection](#svm:feature-selection)  
+5. [SVM:Feature Selection](#svm:feature-selection)  
 6. [SVM:Performance evaluation](#performance-evaluation)  
 7. [Deep_Learning](#deep-learning)
 8.  [Discussion](#discussion)
