@@ -80,9 +80,9 @@ An exploratory statistical analysis of the datasets was essential to asses adequ
 
 ## Results
 Resulting plot were saved on three folders:
-- [SequenceLogo](/Data_analysis/SequenceLogo) Contains sequence logo visualizations representing conserved regions and amino acid preferences across datasets.
-- [Sequence_lengths_comparison](/Data_analysis/Sequence_lengths_comparison) Includes analyses and plots comparing sequence length distributions between datasets.
-- [Taxonomy_classification](/Data_analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
+- [SequenceLogo](/Data_Analysis/SequenceLogo) Contains sequence logo visualizations representing conserved regions and amino acid preferences across datasets.
+- [Sequence_lengths_comparison](/Data_Analysis/Sequence_lengths_comparison) Includes analyses and plots comparing sequence length distributions between datasets.
+- [Taxonomy_classification](/Data_Analysis/Taxonomy_classification) Provides taxonomic classification summaries, exploring the distribution of sequences across taxonomic groups. 
 
 ---
 
