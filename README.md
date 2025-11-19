@@ -6,6 +6,8 @@
 Cagnini Luca,  Centenaro Marco,  Cuscunà Marco,  Mariano Marina,  Timelli Giacomo
 Bioinformatics, FABIT, Alma Mater Studiorum – University of Bologna, Italy
 
+---
+
 ## **Abstract**
 This repository contains files and codes of the project for the **Laboratory of Bioinformatics 2 course**. The aim of the project was to analyze and compare three different **computational approaches** for the prediction of **Signal peptides (SPs)**. 
 Signal peptides (SPs) are short, essential sequences that guide proteins to their
@@ -16,7 +18,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 **Results:** The aim of the study is to confirm this hypothesis developing a correct workflow that higlights significant improvement on protein predictions of the firs two methods previously mentioned over the latter.  
 
 ---
-## Table of Contents
+# Table of Contents
 
 1. [Data Collection](#data-collection)  
 2. [Data_Preparation](#data-preparation)  
