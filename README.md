@@ -1,6 +1,12 @@
 
 # **A Cross-Model Comparison of Secretiory Signal Peptide Prediction Techiques: Von Hijne, SVM, NN**
 
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-1.14-orange?logo=pytorch&logoColor=white)
+![SVM & NN](https://img.shields.io/badge/Methods-SVM%20%26%20NN-green)
+![Bioinformatics](https://img.shields.io/badge/Field-Bioinformatics-purple)
+![License: MIT](https://img.shields.io/badge/License-MIT-lightgrey)
+
 ## **Laboratory of Bioinformatics 2, A.Y. 2025/2026**
 
 Cagnini Luca,  Centenaro Marco,  Cuscunà Marco,  Mariano Marina,  Timelli Giacomo
