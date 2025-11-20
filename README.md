@@ -144,6 +144,8 @@ Training includes early stopping and gradient clipping to ensure robust learning
 ## Results 
 On the benchmark fold, the model achieves an **MCC of ~0.902**, demonstrating strong predictive performance.
 
+---
+
 # Model Performances 
 
 Repository; [Model_Performances](./Model_performances)
@@ -158,19 +160,29 @@ A comparative evaluation of multiple classification models was performed. The go
 | SVM        | 0.808  |
 | DL         | 0.902  |
 
+---
+
 # 8. Discussion
-# Discussion
 
-## summarizes the performance of three models: Von Heijne, SVM, and Neural Network (NN)
+## summary  performance of three models: Von Heijne, SVM, and Neural Network (NN)
 
+### Von Heijne
 **The Von Heijne model**, based solely on amino acid frequencies, served as a baseline and performed poorly. It showed high false positive rates, particularly for transmembrane (TM) proteins, highlighting that signal peptides and TM domains share similar amino acid composition, which easily misled the model compared to SVM. 
 
+### SVM
 **The SVM classifier** achieved low overall FPR, although TM helices remained a common source of misclassification. False negatives were slightly more frequent in short signal peptides (<15 residues), while longer peptides were generally classified correctly. Amino acid composition played a key role in both false positives and false negatives, and plant transit peptides did not significantly confound performance (FPR ~2.2%), though Arabidopsis sequences showed a slightly higher FPR.
 
+### Neural Network
 **The Neural Network** outperformed SVM in overall MCC, as well as in FP and FN counts. TM proteins were still misclassified (41.2% of FPs), and longer signal peptides (>35 residues) tended to be false negatives. Taxon-specific differences were observed: FPR decreased in plant proteins but increased in fungi and other groups. Sequence features such as leucine frequency in the first positions of the signal peptide appeared important for correct classification.
 
-Overall, both SVM and NN are robust models, with NN generally superior. Misclassification is primarily influenced by TM domains, amino acid composition, and signal peptide length, while transit peptides in plants do not globally confound the classifiers.
+---
+# 9. Conclusions
 
+The objective of this project was to develop and evaluate computational models for signal peptide (SP) prediction. Three approaches were compared: the von Heijne algorithm (VH), Support Vector Machines (SVM), and a Deep Learning.
+
+Overall, both **SVM** and **NN** are robust classifiers for signal peptide prediction, with the Neural Network showing superior performance. Misclassifications are primarily driven by TM domains, signal peptide length, and amino acid composition. Transit peptides in plants, have minimal impact on classifier performance, suggesting these models can reliably distinguish signal peptides from similar N-terminal sequences. This work emphasizes the importance of careful feature selection and model choice in bioinformatic prediction tasks.
+
+---
 
 
 # Contacts
