@@ -26,7 +26,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 4. [Von Heijne](#von-heijne)  
 5. [SVM: Feature Selection](#svm-feature-selection)  
 6. [SVM: Performance Evaluation](#svm-performance-evaluation) 
-7. [Deep_Learning](#deep-learning)
+7. [Deep_Learning: LSTM](#deep-learning-lstm)
 8.  [Discussion](#discussion)
 ---
 
@@ -129,7 +129,6 @@ Results show strong and consistent predictive performance, with average MCC scor
 
 Performance evaluation procedure consisted into an initial hyperparameter tuning procedure for the SVM model developement. Subsequently, classical performance measures (ex, MCC) were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
 
-# Deep Learning 
 
 ## Performance Summary 
 
@@ -137,8 +136,25 @@ Performance evaluation procedure consisted into an initial hyperparameter tuning
 |------------|--------|
 | VonHeijne  | 0.688  |
 | SVM        | 0.808  |
+
+# Deep Learning: LSTM
+
+Repository: [Deep_Learning](./Deep_Learning/)
+
+The model is a hybrid **CNN-LSTM** that extracts local features with convolutional layers and captures long-range dependencies with LSTM layers.  
+A dynamic fully connected **MLP head** performs binary classification on the processed sequence features.  
+Training includes early stopping and gradient clipping to ensure robust learning.  
+
+## Results 
+On the benchmark fold, the model achieves an **MCC of ~0.902**, demonstrating strong predictive performance.
+
 # Discussion
 Discuss and report results
+ | Metod     |   MCC  |
+|------------|--------|
+| VonHeijne  | 0.688  |
+| SVM        | 0.808  |
+| DL         | 0.902  |
 
 # Contacts
 - Giacomo Timelli - giacomo.timelli@studio.unibo.it
