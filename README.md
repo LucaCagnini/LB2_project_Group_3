@@ -9,7 +9,8 @@
 
 ## **Laboratory of Bioinformatics 2, A.Y. 2025/2026**
 
-Cagnini Luca,  Centenaro Marco,  Cuscunà Marco,  Mariano Marina,  Timelli Giacomo
+Cagnini Luca,  Centenaro Marco,  Cuscunà Marco,  Mariano Marina,  Timelli Giacomo 
+
 Bioinformatics, FABIT, Alma Mater Studiorum – University of Bologna, Italy
 
 ---
