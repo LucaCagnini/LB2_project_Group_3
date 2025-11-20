@@ -37,7 +37,7 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 8.  [Discussion](#discussion)
 ---
 
-# 1. Data Collection
+# Data Collection
 
 Repository: [Data_collection](./Data_Collection)
 
@@ -56,7 +56,7 @@ Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/p
 
 ---
 
-# 2. Data Preparation
+# Data Preparation
 
 Repository: [Data_Preparation](./Data_Preparation)
 
@@ -77,7 +77,7 @@ Results of our analysis were saved on the file [train_bench.tsv](./Data_Preparat
 
 ---
 
-# 3. Data Analysis
+# Data Analysis
 Repository: [Data-analysis](./Data_Analysis)
 
 An exploratory statistical analysis of the datasets was essential to asses adequacy of the datasets for our porpouse, aimed to confirm dataset quality. 
@@ -94,7 +94,7 @@ Resulting plot were saved on three folders:
 
 ---
 
-# 4. Von Heijne
+# Von Heijne
 
 Repository: [von_Heijne](./vonHeijne)
 
@@ -112,7 +112,7 @@ After cross-validation method, a mean value of each metric was calculated and it
 
 ---
 
-# 5. SVM: Feature Selection 
+# SVM: Feature Selection 
 
 Repository: [Feature_Selection](./Feature_Selection)
 
@@ -133,7 +133,7 @@ Results show strong and consistent predictive performance, with average MCC scor
 
 ---
 
-# 6. Deep Learning: LSTM
+#  Deep Learning: LSTM
 
 Repository: [Deep_Learning](./Deep_Learning/)
 
@@ -144,7 +144,7 @@ Training includes early stopping and gradient clipping to ensure robust learning
 ## Results 
 On the benchmark fold, the model achieves an **MCC of ~0.902**, demonstrating strong predictive performance.
 
-# 7. Model Performances 
+# Model Performances 
 
 Repository; [Model_Performances](./Model_performances)
 
