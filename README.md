@@ -32,8 +32,8 @@ improvements over traditional methods like the **Von Heijne algorithm**.
 3. [Data_analysis](#data-analysis)  
 4. [Von Heijne](#von-heijne)  
 5. [SVM: Feature Selection](#svm-feature-selection)  
-6. [SVM: Performance Evaluation](#svm-performance-evaluation) 
-7. [Deep_Learning: LSTM](#deep-learning-lstm)
+6. [Deep_Learning: LSTM](#deep-learning-lstm)
+7. [Model performances](#model-performances)
 8.  [Discussion](#discussion)
 ---
 
@@ -57,6 +57,7 @@ Results were saved in two .tsv files: [positive_dataset.tsv], (Data_Collection/p
 ---
 
 # Data Preparation
+
 Repository: [Data_Preparation](./Data_Preparation)
 
 This step included the preprocessing pipeline datasets for cross-validation and benchmarking, including:
@@ -94,6 +95,7 @@ Resulting plot were saved on three folders:
 ---
 
 # Von Heijne
+
 Repository: [von_Heijne](./vonHeijne)
 
 Von Heijne’s algorithm was developed by Gunnar von Heijne in the 1980s–1990s, often used in combination with experimental data to analyze protein targeting. Implementation involved the creation of a PSWM (position specific weight metric combined with a 5-fold cross validation method, using appropirate measures for testing our analysis. 
@@ -131,19 +133,6 @@ Results show strong and consistent predictive performance, with average MCC scor
 
 ---
 
-# SVM: Performance Evaluation
-[Performance_evaluation](./performance_SVM)
-
-Performance evaluation procedure consisted into an initial hyperparameter tuning procedure for the SVM model developement. Subsequently, classical performance measures (ex, MCC) were employed. In addition, a strict analysis of the False Positive and False Negative results was developed, in order to aknowledge possible patterns in the error detection of the model. 
-
-
-## Performance Summary 
-
- | Metod     |   MCC  |
-|------------|--------|
-| VonHeijne  | 0.688  |
-| SVM        | 0.808  |
-
 # Deep Learning: LSTM
 
 Repository: [Deep_Learning](./Deep_Learning/)
@@ -154,6 +143,20 @@ Training includes early stopping and gradient clipping to ensure robust learning
 
 ## Results 
 On the benchmark fold, the model achieves an **MCC of ~0.902**, demonstrating strong predictive performance.
+
+# Model Performances 
+
+Repository; [Model_Performances](./Model_Performances)
+
+A comparative evaluation of multiple classification models was performed. The goal was to measure and compare model performance using robust metrics such as Matthews Correlation Coefficient (MCC) and standard classification scores as well as getting insights about the biological reasons under our results. 
+
+## Performances Summary 
+
+ | Metod     |   MCC  |
+|------------|--------|
+| VonHeijne  | 0.688  |
+| SVM        | 0.808  |
+| DL         | 0.902  |
 
 # Discussion
 Discuss and report results
