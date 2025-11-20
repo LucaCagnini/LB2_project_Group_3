@@ -146,7 +146,7 @@ On the benchmark fold, the model achieves an **MCC of ~0.902**, demonstrating st
 
 # Model Performances 
 
-Repository; [Model_Performances](./Model_Performances)
+Repository; [Model_Performances](./Model_performances)
 
 A comparative evaluation of multiple classification models was performed. The goal was to measure and compare model performance using robust metrics such as Matthews Correlation Coefficient (MCC) and standard classification scores as well as getting insights about the biological reasons under our results. 
 
